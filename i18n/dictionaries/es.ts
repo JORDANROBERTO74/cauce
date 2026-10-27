@@ -263,9 +263,9 @@ export const es: Dictionary = {
   },
   cta: {
     title: "Pon la señal antes del discurso.",
-    body: "Reserva una demo o lee primero el código. Las dos cosas están abiertas.",
+    body: "Reserva una demo y recorremos los mismos cuatro pasos con tu lista.",
     primary: "Reservar demo",
-    secondary: "Leer el código",
+    secondary: "Ver cómo funciona",
   },
   footer: {
     tagline: "Espacio de outbound para equipos B2B. Demo bilingüe construida con Next.js.",
@@ -277,14 +277,6 @@ export const es: Dictionary = {
           { label: "Cómo funciona", href: "#how-it-works" },
           { label: "Precios", href: "#pricing" },
           { label: "Preguntas", href: "#faq" },
-        ],
-      },
-      {
-        title: "Recursos",
-        links: [
-          { label: "Código", href: "repo" },
-          { label: "README", href: "repo-readme" },
-          { label: "Licencia", href: "repo-license" },
         ],
       },
     ],

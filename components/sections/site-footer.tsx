@@ -5,12 +5,6 @@ import { site } from "@/config/site"
 import type { Locale } from "@/i18n/config"
 import type { Dictionary } from "@/i18n/get-dictionary"
 
-const hrefMap: Record<string, string> = {
-  repo: site.repo,
-  "repo-readme": `${site.repo}#readme`,
-  "repo-license": `${site.repo}/blob/main/LICENSE`,
-}
-
 export function SiteFooter({
   footer,
   locale,
@@ -21,13 +15,13 @@ export function SiteFooter({
   return (
     <footer className="border-t border-ink-line bg-ink text-bone">
       <div className="mx-auto max-w-7xl px-5 py-14 md:px-8">
-        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="grid gap-10 md:grid-cols-[1.6fr_1fr]">
           <div>
             <Link href={`/${locale}`} className="flex items-center gap-2.5">
               <Logo />
               <span className="text-lg font-semibold tracking-tight">{site.name}</span>
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-bone/50">{footer.tagline}</p>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-bone/55">{footer.tagline}</p>
             <a
               href={`mailto:${site.email}`}
               className="mt-5 inline-block text-sm text-citron underline-offset-4 hover:underline"
@@ -42,22 +36,16 @@ export function SiteFooter({
                 {column.title}
               </h2>
               <ul className="mt-4 space-y-2.5">
-                {column.links.map((link) => {
-                  const href = hrefMap[link.href] ?? link.href
-                  const external = href.startsWith("http")
-
-                  return (
-                    <li key={link.label}>
-                      <a
-                        href={href}
-                        {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
-                        className="text-sm text-bone/65 transition-colors hover:text-bone"
-                      >
-                        {link.label}
-                      </a>
-                    </li>
-                  )
-                })}
+                {column.links.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-sm text-bone/65 transition-colors hover:text-bone"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </nav>
           ))}

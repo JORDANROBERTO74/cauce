@@ -32,7 +32,7 @@ export function Cta({ cta }: { cta: Dictionary["cta"] }) {
               {cta.primary}
               <Icon name="arrow" className="size-4" />
             </ButtonLink>
-            <ButtonLink href={site.repo} variant="outlineLight" size="lg">
+            <ButtonLink href="#how-it-works" variant="outlineLight" size="lg">
               {cta.secondary}
             </ButtonLink>
           </div>

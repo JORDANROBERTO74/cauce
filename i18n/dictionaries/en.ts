@@ -350,9 +350,9 @@ export const en: Dictionary = {
   },
   cta: {
     title: "Put the signal before the pitch.",
-    body: "Book a walkthrough, or read the source first. Both are open.",
+    body: "Book a walkthrough and we will run the same four steps against your list.",
     primary: "Book a demo",
-    secondary: "Read the source",
+    secondary: "See how it works",
   },
   footer: {
     tagline: "Outbound workspace for B2B teams. Bilingual demo built with Next.js.",
@@ -366,16 +366,7 @@ export const en: Dictionary = {
           { label: "FAQ", href: "#faq" },
         ],
       },
-      {
-        title: "Resources",
-        links: [
-          { label: "Source", href: "repo" },
-          { label: "README", href: "repo-readme" },
-          { label: "License", href: "repo-license" },
-        ],
-      },
-    ],
-    legal: "© 2026 Cauce Labs. All rights reserved.",
+    ],    legal: "© 2026 Cauce Labs. All rights reserved.",
     demoNote: "Demo project. Sample data, no accounts, no tracking beyond Vercel Analytics.",
   },
   notFound: {

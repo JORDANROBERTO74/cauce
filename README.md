@@ -90,7 +90,7 @@ The site is deployed on Vercel as a static build of the two locale routes.
 2. Set `NEXT_PUBLIC_SITE_URL` to the production origin. It drives canonical URLs, `sitemap.xml`, `robots.txt` and the Open Graph URLs.
 3. Deploy. No other environment variables are required.
 
-Live demo: <https://cauce.vercel.app>
+Live demo: <https://cauce-eight.vercel.app>
 
 ## Status and scope
 
