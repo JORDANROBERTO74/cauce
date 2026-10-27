@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# next
+.next/
+out/
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# environment
+.env
+.env*.local
+
+# deployment
+.vercel/
+
+# misc
+.DS_Store
+*.log

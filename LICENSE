@@ -1,0 +1,13 @@
+Copyright (c) 2026 Cauce Labs
+
+All rights reserved.
+
+This source code and the brand assets in this repository are proprietary.
+No permission is granted to copy, modify, distribute, sublicense or use this
+material, in whole or in part, without prior written permission from the
+copyright holder.
+
+Third-party dependencies remain under their own licenses, as listed in
+`package.json` and their respective packages. The user interface was rebuilt
+in this repository from an earlier template; that earlier template is not
+licensed for redistribution here and is kept only in a private archive.
